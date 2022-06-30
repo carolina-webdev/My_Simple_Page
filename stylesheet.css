@@ -1,0 +1,141 @@
+/*----------------------------------------------------------*/
+/*--- Assignment 1---*/  
+/*---  Written by: Carolina Torres Restrepo - 2195431 ---*/  
+/*--- For “Front-End Web Programming” Section 05807 - Winter 2022 ---*/ 
+/*----------------------------------------------------------*/
+
+* { box-sizing: border-box; margin: 0; }
+
+body {font-family: monospace, 'Courier New', Courier, sans-serif; 
+text-align: center;}
+
+nav { background-color: #F76CD9 }
+
+nav ul { list-style-type: none; 
+         margin: 0;
+         padding: 0;
+}
+
+nav li { border-bottom: 1px solid #ffffff;
+}
+
+nav a { text-decoration: none; 
+        display: block;
+		padding: 1em 2em;
+}
+
+nav a:link { color: #FFFFFF; }
+
+nav a:visited { color: #F8F8F8; }
+
+nav a:hover {  color: #000066;
+               background-color: #eaeaea;
+}
+
+header { text-align: center;
+  text-shadow: 2px 2px 2px #F76CD9;	 
+        color: #ffffff; 
+		background-size: 100% 100%;
+        background-repeat: no-repeat;
+		padding: 7em; 
+}
+
+.welcomeimage { 
+background-image: url(welcome.png);}
+
+.aboutmeimage {
+  background-image: url(aboutme.png);}
+
+a {text-decoration: none; 
+font-weight: bold;
+color: #F76CD9;}
+
+h1 { text-align: center;
+    font-size: 60px;
+}
+
+h2 { 
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #a8a5a5;
+    font-weight: bold;	
+    color: #F76CD9; 
+     font-family: fantasy, sans-serif;
+     text-align: center;
+}
+
+main li {
+	margin: 0;
+  padding: 10px 0 10px 74px;
+	list-style: none;
+	background-image: url("icon.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+  font-size: 20px;
+    text-align: justify;
+}
+
+p {font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+padding: 1em;}
+
+.quotecolor {
+  color: #F76CD9;
+}
+
+main { padding: 2em; }
+
+aside    { flex: 4; }
+
+footer { background-color: #F76CD9;
+    color: #ffffff;
+         font-size:80%;
+         text-align: center;
+         padding: 2em;}
+
+/* Characteristics of inspirational quote added in welcome and about page */
+@media (min-width: 1025px)  {
+
+#content { display: flex; }  
+ 
+main     { flex: 6; 
+           min-width: 20em; 
+           background-color: #FFFFFF; }
+}
+
+blockquote{
+  font-size: 1.4em;
+  width:80%;
+  margin:100px auto;
+  font-family: monospace;
+  font-style:italic;
+  color: #000000;
+  padding:30px 30px 30px 75px;
+  border-left:8px solid #F76CD9;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#F76CD9;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: monospace;
+  font-weight: bold;
+  margin-top:1em;
+}
